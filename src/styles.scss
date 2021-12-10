@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Nixie+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nixie+One&family=Oswald:wght@300&display=swap");
 
 :root {
-  --white: hsl(0, 0%, 100%);
+  --white: hsl(0, 0%, 75%);
 
   --d-element: hsl(209, 23%, 22%);
   --d-bg: hsl(207, 26%, 17%);
@@ -19,9 +19,23 @@
 }
 
 body {
-  font-family: "Nixie One", cursive;
+  font-family: "Oswald", sans-serif;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    132deg,
+    rgba(0, 0, 0, 1) 55%,
+    rgba(70, 70, 70, 1) 100%
+  );
+  color: rgb(255, 255, 255);
 }
 
 .shadow {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 6px rgba(255, 255, 255, 0.1),
+    0 3px 6px rgba(255, 255, 255, 0.1);
+}
+
+.shadow:hover {
+  color: #b6b6b6;
+  box-shadow: 0 0 20px #fdfdfd;
+  transition: transform 0.2s ease-out;
 }

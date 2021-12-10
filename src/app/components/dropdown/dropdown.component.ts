@@ -6,7 +6,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./dropdown.component.scss']
 })
 export class DropdownComponent {
-  showOptions = true;
+  showOptions = false;
 
 
   @Input()

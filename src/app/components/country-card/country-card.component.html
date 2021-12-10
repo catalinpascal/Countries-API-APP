@@ -1,7 +1,10 @@
-<div *ngIf="country" 
+
+    
+<div class="container">
+     <div *ngIf="country" 
 [routerLink]="'/' + country.name" 
 class="country-card shadow">
-    <div class="country-card-img"><img [src]="country.flag" alt=""></div>
+<div class="country-card-img" ><img [src]="country.flag" alt="flag"></div>
 
     <div class="country-card-info">
         <h3>{{ country.name }}</h3>
@@ -20,6 +23,12 @@ class="country-card shadow">
             {{ country.capital }}
         </p>
     </div>
-    
-    
 </div>
+</div>
+
+
+
+
+
+
+
