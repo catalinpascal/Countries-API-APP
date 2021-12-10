@@ -1,0 +1,26 @@
+.dropdown {
+  border-radius: 0.25rem;
+  position: relative;
+  margin-top: 1rem;
+  padding: 1rem;
+  @media (min-width: 376px) {
+    margin-top: 0;
+  }
+  &-label {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-options {
+    border-radius: 0.25rem;
+    list-style: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    li {
+      padding: 0.5rem;
+      background: white;
+    }
+  }
+}
